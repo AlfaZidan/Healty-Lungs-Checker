@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Healty Lungs Checker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../static/images/lungs.png">
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-light">
+        <div class="container align-items-center">
+          <a class="navbar-brand fw-bold logo-name" href="#">
+            <img class="w-25" src="../static/images/logo.png"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item fw-semibold">
+                  <a class="nav-link" href="/">Beranda</a>
+                </li>
+                <li class="nav-item fw-semibold">
+                  <a class="nav-link" href="/klasifikasi">Klasifikasi</a>
+                </li>
+                <li class="nav-item fw-semibold">
+                  <a class="nav-link" href="#contact-us">Hubungi Kami</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="container my-5">
+        <h2 class="text-center mb-4">Form Prediksi Klasifikasi</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <form method="post" action="/klasifikasi">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="Air Pollution">Air Pollution</label>
+                    <input type="number" class="form-control my-2" id="Air Pollution" name="Air Pollution" min="1" max="8" placeholder="Range 1 - 8" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="Alcohol use">Alcohol Use</label>
+                    <input type="number" class="form-control my-2" id="Alcohol use" name="Alcohol use" min="1" max="8" placeholder="Range 1 - 8" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="Dust Allergy">Dust Allergy</label>
+                    <input type="number" class="form-control my-2" id="Dust Allergy" name="Dust Allergy" min="1" max="8" placeholder="Range 1 - 8" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="OccuPational Hazards">OccuPational Hazards</label>
+                    <input type="number" class="form-control my-2" id="OccuPational Hazards" name="OccuPational Hazards" min="1" max="8" placeholder="Range 1 - 8" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="Genetic Risk">Genetic Risk</label>
+                    <input type="number" class="form-control my-2" id="Genetic Risk" name="Genetic Risk" min="1" max="7" placeholder="Range 1 - 7" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="chronic Lung Disease">Chronic Lung Disease</label>
+                    <input type="number" class="form-control my-2" id="chronic Lung Disease" name="chronic Lung Disease" min="1" max="7" placeholder=" Range 1 - 7" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="Balanced Diet">Balanced Diet</label>
+                    <input type="number" class="form-control my-2" id="Balanced Diet" name="Balanced Diet" min="1" max="7" placeholder="Range 1 - 7" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="Obesity">Obesity</label>
+                    <input type="number" class="form-control my-2" id="Obesity" name="Obesity" min="1" max="7" placeholder="Range 1 - 7" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="Passive Smoker">Passive Smoker</label>
+                    <input type="number" class="form-control my-2" id="Passive Smoker" name="Passive Smoker" min="1" max="8" placeholder="Range 1 - 8" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="Chest Pain">Chest Pain</label>
+                    <input type="number" class="form-control my-2" id="Chest Pain" name="Chest Pain" min="1" max="9" placeholder="Range 1 - 9" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="Coughing of Blood">Coughing of Blood</label>
+                    <input type="number" class="form-control my-2" id="Coughing of Blood" name="Coughing of Blood" min="1" max="9" placeholder="Range 1 - 9" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="Fatigue">Fatigue</label>
+                    <input type="number" class="form-control my-2" id="Fatigue" name="Fatigue" min="1" max="9" placeholder="Range 1 - 9" required>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer mt-auto py-3 bg-body-light">
+        <div class="container text-center">
+          <span class="text-muted">© 2024 <a href="https://instagram.com/alfazidan_" target="_blank">Alfa</a>. All rights reserved.</span>
+        </div>
+      </footer>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </body>
+</html>
